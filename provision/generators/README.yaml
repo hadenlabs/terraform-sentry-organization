@@ -1,0 +1,59 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-sentry-organization
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/terraform-sentry-organization
+
+# Badges to display
+badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/terraform-sentry-organization.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/terraform-sentry-organization/releases
+  - name: Lint
+    image: https://github.com/hadenlabs/terraform-sentry-organization/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/terraform-sentry-organization/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/terraform-sentry-organization.svg
+    url: https://github.com/hadenlabs/terraform-sentry-organization/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/terraform-sentry-organization.svg
+    url: https://github.com/hadenlabs/terraform-sentry-organization/releases
+
+# Short description of this project
+description: |-
+  terraform sentry organization
+
+# How to use this project
+usage: |-
+
+  ```hcl
+    module "main" {
+      source = "hadenlabs/organization/sentry"
+      version   = "0.0.0"
+    }
+
+  ```
+
+  Full working examples can be found in [examples](./examples) folder.
+
+examples:
+  - 'docs/examples/common.md'
+
+include:
+  - 'docs/include/targets.md'
+  - 'docs/include/terraform.md'
