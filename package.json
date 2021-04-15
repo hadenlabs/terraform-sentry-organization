@@ -19,7 +19,7 @@
     "clean:build:test": "yarn clean ./coverage",
     "clean:build:tool": "yarn clean ./build/tools",
     "clean:cache": "yarn clean ./node_modules/.cache",
-    "generate": "cross-env TS_NODE_PROJECT='./provision/generators/plop/ts-node.tsconfig.json' plop --plopfile provision/generators/plop/index.ts",
+    "plop": "cross-env TS_NODE_PROJECT='./provision/generators/plop/ts-node.tsconfig.json' plop --plopfile provision/generators/plop/index.ts",
     "lint": "eslint --config=.github/linters/.eslintrc.js --ignore-path=.github/linters/.eslintignore ./ --ext .js,.jsx,.mjs,.d.ts,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:less": "stylelint --config=.github/linters/.stylintrc --syntax less **/*.less",
