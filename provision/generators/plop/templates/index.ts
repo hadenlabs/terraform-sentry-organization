@@ -34,7 +34,7 @@ export const testGenerator: PlopGeneratorConfig = {
     actions.push({
       type: "add",
       templateFile: `${baseTemplatesPath}/test.append.hbs`,
-      path: `${testPath}/test_sentry_organization_${slugify(answers.testName, '_')}.go`,
+      path: `${testPath}/sentry_organization_${slugify(answers.testName, '_')}_test.go`,
       abortOnFail: true,
     })
 
