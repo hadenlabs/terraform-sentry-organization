@@ -29,7 +29,7 @@ git.setup:
 .PHONY: git.hooks
 git.hooks:
 	@echo "==> git setup hooks..."
-	@rsync -avhP  provision/git/hooks/ .git/hooks/
+	@rsync -vhP  provision/git/hooks/ .git/hooks/
 	@echo ${MESSAGE_HAPPY}
 
 ## Generate git ignore of files.
