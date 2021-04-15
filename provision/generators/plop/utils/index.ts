@@ -1,5 +1,3 @@
-import fs from 'fs'
 
-export function pathExists(path: string) {
-  return fs.existsSync(path)
-}
+import {hyphenate, baseGeneratorPath, pathExists, pathMake, baseTemplatesPath} from "./helpers"
+export {hyphenate, baseGeneratorPath, pathExists, pathMake, baseTemplatesPath}
