@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test{{camelCase testName}}Success(t *testing.T) {
+func Test{{pascalCase testName}}Success(t *testing.T) {
 	t.Parallel()
 
 	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
-		TerraformDir: "{{camelCase testName}}",
+		TerraformDir: "sentry-organization-{{dashCase testName}}",
 		Upgrade:      true,
 		Vars: map[string]interface{}{
 		},
