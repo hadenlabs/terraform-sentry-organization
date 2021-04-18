@@ -1,0 +1,3 @@
+provider "sentry" {
+  # Configuration options
+}
