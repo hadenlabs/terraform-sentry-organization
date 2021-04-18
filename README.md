@@ -47,10 +47,13 @@ Full working examples can be found in [examples](./examples) folder.
 | Name                                                                     | Version |
 | ------------------------------------------------------------------------ | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
+| <a name="requirement_sentry"></a> [sentry](#requirement_sentry)          | >=0.6.0 |
 
 ## Providers
 
-No providers.
+| Name                                                      | Version |
+| --------------------------------------------------------- | ------- |
+| <a name="provider_sentry"></a> [sentry](#provider_sentry) | >=0.6.0 |
 
 ## Modules
 
@@ -58,17 +61,25 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+| --- | --- |
+| [sentry_organization.this](https://registry.terraform.io/providers/jianyuan/sentry/latest/docs/resources/organization) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 | --- | --- | --- | --- | :-: |
-| <a name="input_tags"></a> [tags](#input_tags) | This is to help you add tags to your cloud objects | `map(any)` | `null` | no |
+| <a name="input_agree_terms"></a> [agree_terms](#input_agree_terms) | Agreee terms sentry. | `bool` | `true` | no |
+| <a name="input_name"></a> [name](#input_name) | The name of the organization. | `string` | n/a | yes |
+| <a name="input_slug"></a> [slug](#input_slug) | The name of the organization. | `string` | `null` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+| --- | --- |
+| <a name="output_id"></a> [id](#output_id) | output id organization |
+| <a name="output_instance"></a> [instance](#output_instance) | output instance sentry organization |
+| <a name="output_name"></a> [name](#output_name) | output name organization |
 
 <!-- END_TF_DOCS -->
 
