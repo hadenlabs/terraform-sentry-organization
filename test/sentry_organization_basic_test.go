@@ -27,5 +27,7 @@ func TestBasicSuccess(t *testing.T) {
 	// This will run `terraform init` and `terraform apply` and fail the test if there are any errors
 	terraform.InitAndApply(t, terraformOptions)
   outputOrganization := terraform.Output(t, terraformOptions, "instance")
+  outputName := terraform.Output(t, terraformOptions, "name")
   assert.NotEmpty(t, outputOrganization, outputOrganization)
+  assert.NotEmpty(t, outputName, outputName)
 }
