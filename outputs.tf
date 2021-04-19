@@ -12,3 +12,8 @@ output "name" {
   description = "output name organization"
   value       = local.outputs.name
 }
+
+output "slug" {
+  description = "output slug organization"
+  value       = sentry_organization.this.slug
+}
