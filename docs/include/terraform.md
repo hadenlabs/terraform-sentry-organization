@@ -28,6 +28,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_agree_terms"></a> [agree\_terms](#input\_agree\_terms) | Agreee terms sentry. | `bool` | `true` | no |
+| <a name="input_teams"></a> [teams](#input\_teams) | The teams of the organization. | `list(any)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the organization. | `string` | n/a | yes |
 | <a name="input_slug"></a> [slug](#input\_slug) | The name of the organization. | `string` | `null` | no |
 
