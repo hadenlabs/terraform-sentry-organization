@@ -28,6 +28,8 @@ func TestBasicSuccess(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 	outputOrganization := terraform.Output(t, terraformOptions, "instance")
 	outputName := terraform.Output(t, terraformOptions, "name")
+	outputSlug := terraform.Output(t, terraformOptions, "slug")
 	assert.NotEmpty(t, outputOrganization, outputOrganization)
+	assert.NotEmpty(t, outputSlug, outputSlug)
 	assert.NotEmpty(t, outputName, outputName)
 }
