@@ -21,6 +21,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [sentry_organization.this](https://registry.terraform.io/providers/jianyuan/sentry/latest/docs/resources/organization) | resource |
+| [sentry_team.this](https://registry.terraform.io/providers/jianyuan/sentry/latest/docs/resources/team) | resource |
 
 ## Inputs
 
@@ -37,4 +38,5 @@ No modules.
 | <a name="output_id"></a> [id](#output\_id) | output id organization |
 | <a name="output_instance"></a> [instance](#output\_instance) | output instance sentry organization |
 | <a name="output_name"></a> [name](#output\_name) | output name organization |
+| <a name="output_slug"></a> [slug](#output\_slug) | output slug organization |
 <!-- END_TF_DOCS -->
