@@ -32,11 +32,39 @@ Full working examples can be found in [examples](./examples) folder.
 
 ## Examples
 
-### common
+### sentry organization
 
 ```hcl
 
+  module "sentry" {
+    providers = {
+      sentry = sentry
+    }
+    source      = "hadenlabs/organization/sentry"
+    version     = "0.0.0"
+    name        = "name organization"
+  }
 
+```
+
+### sentry organization with teams
+
+```hcl
+
+  module "sentry" {
+    providers = {
+      sentry = sentry
+    }
+    source      = "hadenlabs/organization/sentry"
+    version     = "0.0.0"
+    name        = "name organization"
+    teams       = [
+      {
+        name = "team 1"
+      }
+    ]
+
+  }
 
 ```
 
@@ -64,12 +92,14 @@ No modules.
 | Name | Type |
 | --- | --- |
 | [sentry_organization.this](https://registry.terraform.io/providers/jianyuan/sentry/latest/docs/resources/organization) | resource |
+| [sentry_team.this](https://registry.terraform.io/providers/jianyuan/sentry/latest/docs/resources/team) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 | --- | --- | --- | --- | :-: |
 | <a name="input_agree_terms"></a> [agree_terms](#input_agree_terms) | Agreee terms sentry. | `bool` | `true` | no |
+| <a name="input_teams"></a> [teams](#input_teams) | The teams of the organization. | `list(any)` | `[]` | no |
 | <a name="input_name"></a> [name](#input_name) | The name of the organization. | `string` | n/a | yes |
 | <a name="input_slug"></a> [slug](#input_slug) | The name of the organization. | `string` | `null` | no |
 
@@ -80,6 +110,7 @@ No modules.
 | <a name="output_id"></a> [id](#output_id) | output id organization |
 | <a name="output_instance"></a> [instance](#output_instance) | output instance sentry organization |
 | <a name="output_name"></a> [name](#output_name) | output name organization |
+| <a name="output_slug"></a> [slug](#output_slug) | output slug organization |
 
 <!-- END_TF_DOCS -->
 
