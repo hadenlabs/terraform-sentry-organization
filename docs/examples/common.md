@@ -7,7 +7,7 @@
       sentry = sentry
     }
     source      = "hadenlabs/organization/sentry"
-    version     = "0.0.0"
+    version     = "0.1.0"
     name        = "name organization"
   }
 
@@ -22,7 +22,7 @@
       sentry = sentry
     }
     source      = "hadenlabs/organization/sentry"
-    version     = "0.0.0"
+    version     = "0.1.0"
     name        = "name organization"
     teams       = [
       {
