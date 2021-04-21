@@ -1,6 +1,6 @@
 {
   "name": "terraform-sentry-organization",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "terraform sentry organization",
   "repository": "ssh://git@github.com/hadenlabs/terraform-sentry-organization.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
