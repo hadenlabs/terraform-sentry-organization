@@ -40,4 +40,5 @@ No modules.
 | <a name="output_instance"></a> [instance](#output\_instance) | output instance sentry organization |
 | <a name="output_name"></a> [name](#output\_name) | output name organization |
 | <a name="output_slug"></a> [slug](#output\_slug) | output slug organization |
+| <a name="output_teams"></a> [teams](#output\_teams) | output teams of organization |
 <!-- END_TF_DOCS -->
