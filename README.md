@@ -23,7 +23,7 @@ terraform sentry organization
 ```hcl
   module "main" {
     source = "hadenlabs/organization/sentry"
-    version   = "0.1.0"
+    version   = "0.2.0"
   }
 
 ```
@@ -41,7 +41,7 @@ Full working examples can be found in [examples](./examples) folder.
       sentry = sentry
     }
     source      = "hadenlabs/organization/sentry"
-    version     = "0.1.0"
+    version     = "0.2.0"
     name        = "name organization"
   }
 
@@ -56,7 +56,7 @@ Full working examples can be found in [examples](./examples) folder.
       sentry = sentry
     }
     source      = "hadenlabs/organization/sentry"
-    version     = "0.1.0"
+    version     = "0.2.0"
     name        = "name organization"
     teams       = [
       {
