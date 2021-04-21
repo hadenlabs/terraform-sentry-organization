@@ -105,12 +105,13 @@ No modules.
 
 ## Outputs
 
-| Name | Description |
-| --- | --- |
-| <a name="output_id"></a> [id](#output_id) | output id organization |
+| Name                                                        | Description                         |
+| ----------------------------------------------------------- | ----------------------------------- |
+| <a name="output_id"></a> [id](#output_id)                   | output id organization              |
 | <a name="output_instance"></a> [instance](#output_instance) | output instance sentry organization |
-| <a name="output_name"></a> [name](#output_name) | output name organization |
-| <a name="output_slug"></a> [slug](#output_slug) | output slug organization |
+| <a name="output_name"></a> [name](#output_name)             | output name organization            |
+| <a name="output_slug"></a> [slug](#output_slug)             | output slug organization            |
+| <a name="output_teams"></a> [teams](#output_teams)          | output teams of organization        |
 
 <!-- END_TF_DOCS -->
 
