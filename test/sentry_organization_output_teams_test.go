@@ -37,8 +37,9 @@ func TestOutputTeamsSuccess(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 	outputOrganization := terraform.Output(t, terraformOptions, "instance")
 	outputName := terraform.Output(t, terraformOptions, "name")
-	outputTeams := terraform.Output(t, terraformOptions, "teams")
+	outputTeams := terraform.OutputListOfObjects(t, terraformOptions, "teams")
 	assert.NotEmpty(t, outputOrganization, outputOrganization)
 	assert.NotEmpty(t, outputName, outputName)
 	assert.NotEmpty(t, outputTeams, outputTeams)
+	assert.Equal(t, outputTeams[0]["name"], "team1")
 }
