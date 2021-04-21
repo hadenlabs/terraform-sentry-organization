@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.2.0"></a>
+
+## [0.2.0](https://github.com/hadenlabs/terraform-sentry-organization/compare/0.1.0...0.2.0)
+
+> 2021-04-21
+
+### Features
+
+- implement output teams ([#10](https://github.com/hadenlabs/terraform-sentry-organization/issues/10))
+
 <a name="0.1.0"></a>
 
 ## 0.1.0
