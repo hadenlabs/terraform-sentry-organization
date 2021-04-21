@@ -17,3 +17,8 @@ output "slug" {
   description = "output slug organization"
   value       = sentry_organization.this.slug
 }
+
+output "teams" {
+  description = "output teams of organization"
+  value       = sentry_team.this
+}
